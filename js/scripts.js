@@ -14,3 +14,10 @@ function newItem() {
     list.append(li);
   }
 
+  //crossing an item out
+  function crossOut() {
+    li.toggleClass('strike');
+  }
+
+  li.on('dblclick', crossOut);
+
